@@ -1,0 +1,1 @@
+单片机串口传输数据格式：45;27;65     (ph;Turbidity;station_id)

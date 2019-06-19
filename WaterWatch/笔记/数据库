@@ -1,0 +1,21 @@
+创建数据库： create database waterwatch;
+创建数据表： 	
+  CREATE TABLE `water` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` char(30) NOT NULL ,
+  `ph` float NOT NULL ,
+  `Turbidity` float NOT NULL ,
+  `station_id` int(11) NOT NULL ,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+插入相关数据：
+INSERT INTO water
+     (date, ph, Turbidity,station_id)
+     VALUES
+     ('Fri Jul 06 09:23:15 CST 2018',6.8,3000,1);
+
+查询数据：select * from car;
+查询部分数据：select date,ph,Turbidity from water where station_id=21;
+
+id(int)   date(char)   ph(float)  Turbidity(float)  station_id(int)
